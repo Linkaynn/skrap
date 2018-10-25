@@ -20,6 +20,28 @@ REGION_CODE_INDEX = 17
 BASIC_REFERENCE_INDEX = 18
 SOURCE_REGION_INDEX = 19
 
+COLUMN_NAMES = [
+    'year',
+    'date',
+    'time',
+    'latitude',
+    'longitude',
+    'depth',
+    'surface_wave_magnitude',
+    'abe_magnitude',
+    'intensity',
+    'max_height',
+    'moment_magnitude',
+    'available_observations',
+    'damage_code',
+    'cause',
+    'validity',
+    'warning_status',
+    'region_code',
+    'basic_reference',
+    'source_region'
+]
+
 class Tsunami(object):
 
     def __init__(self, row):
@@ -42,13 +64,14 @@ class Tsunami(object):
         self.max_height = self.extract(row[MAX_HEIGHT_INDEX])  # Maximum observed or measured wave height in meters
 
         self.moment_magnitude = self.extract(row[MOMENT_MAGNITUDE_INDEX])
-        self.available_observations = self.extract(row[AVAILABLE_OBSERVATIONS_INDEX])  # Total number of available run-up and tide-gauge observations
+        self.available_observations = self.extract(row[AVAILABLE_OBSERVATIONS_INDEX],
+                                                   0)  # Total number of available run-up and tide-gauge observations
 
         # N - nondamaging
         # S - slight damage
         # M - moderate damage
         # L - large(severe) damage
-        self.damage_code = self.extract(row[DAMAGE_CODE_INDEX])
+        self.damage_code = self.extract(row[DAMAGE_CODE_INDEX], 0)
 
         # T – tectonic
         # V – volcanic
@@ -58,7 +81,7 @@ class Tsunami(object):
         # E – explosion
         # I – impact
         # U – unknown
-        self.cause = self.extract(row[CAUSE_INDEX])
+        self.cause = self.extract(row[CAUSE_INDEX], 'U')
 
         # 4 - definite tsunami (probability near 1.0)
         # 3 - probable tsunami (probability approximately. 0.75)
@@ -107,6 +130,6 @@ class Tsunami(object):
 
         self.source_region = self.extract(row[SOURCE_REGION_INDEX])  # Descriptive indication of the tsunami source area (maximum 24positions)
 
-    def extract(self, param):
+    def extract(self, param, default="N/A"):
         value = param.extract()
-        return "" if "<td" in value else value
+        return default if "<td" in value else value
