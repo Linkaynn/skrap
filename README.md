@@ -1,6 +1,11 @@
-# Skrap - +2000K of tsunamies data spider
+# Skrap - +2000 of tsunamis data spider
+Puedes leer esto en [spanish](#español) o [english](#english).
+
+//
+
 You can read this in [spanish](#español) or [english](#english).
-### Español
+
+### **Español**
 
 #### Descripción
 Skrap es producto de la asignatura *Tipología y ciclo de vida de los datos* del Máster en Ciencia de Datos la Universidad Oberta de Catalunya. *Skrap* es capaz de recopilar información de tsunamis de la base de datos del *Institute of Computational Mathematics and Mathematical Geophysics
@@ -31,7 +36,7 @@ Puedes encontrar la taxonomía del dataset en el README dedicado a este, pulsa [
 #### Autores
 - Jesé Romero Arbelo
 
-### English
+### **English**
 
 #### Description
 Skrap is the result of the subject *Tipología y ciclo de vida de los datos* of the master in Data Science of the Universidad Oberta de Catalunya. *Skrap* is capable of take information of tsunamies from the database of *Institute of Computational Mathematics and Mathematical Geophysics
