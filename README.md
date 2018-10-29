@@ -1,5 +1,5 @@
 # Skrap - +2000K of tsunamies data spider
-You can read this in [spanish](#espaol) or [english](#english).
+You can read this in [spanish](#español) or [english](#english).
 ### Español
 
 #### Descripción
@@ -26,7 +26,7 @@ Si todo ha ido bien, se generará un fichero .csv en la carpeta datasets con el 
 
 ##### Taxonomía del dataset
 
-Puedes encontrar la taxonomía del dataset en el README dedicado a este, pulsa [aquí](datasets/README.md) para ir.
+Puedes encontrar la taxonomía del dataset en el README dedicado a este, pulsa [aquí](datasets) para ir.
 
 #### Autores
 - Jesé Romero Arbelo
@@ -57,7 +57,7 @@ If everything is ok, it will generate a CSV file in the dataset folder with the 
 
 ##### Dataset taxonomy
 
-You can find the taxonomy of the dataset in the README dedicated to this, click here [aquí](datasets/README.md) to go.
+You can find the taxonomy of the dataset in the README dedicated to this, click here [aquí](datasets) to go.
 
 #### Authors
 - Jesé Romero Arbelo
