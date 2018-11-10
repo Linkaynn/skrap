@@ -62,7 +62,7 @@ If everything is ok, it will generate a CSV file in the dataset folder with the 
 
 ##### Dataset taxonomy
 
-You can find the taxonomy of the dataset in the README dedicated to this, click here [aquí](datasets) to go.
+You can find the taxonomy of the dataset in the README dedicated to this, click [here](datasets) to go.
 
 #### Authors
 - Jesé Romero Arbelo
